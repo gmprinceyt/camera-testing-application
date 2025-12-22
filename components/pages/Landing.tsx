@@ -4,11 +4,12 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 
 export function Landing() {
-  const usage = 120;
+  // temp application popularity 
+  const usage = 327;
   return (
-    <div className="w-full  h-249.75 lg:h-screen lg:px-16 px-4.5 sm:px-8 bg-linear-to-b from-[#fff3c8] to-[#ffe14e] dark:from-[#312b0b] dark:to-[#000000]">
+    <div className="w-full h-full  overflow-hidden lg:h-screen lg:px-16 px-4.5 sm:px-8 bg-linear-to-b from-[#fff3c8] to-[#ffe14e] dark:from-[#312b0b] dark:to-[#000000]">
       <Navbar />
-      <div className="flex relative lg:flex-row flex-col gap-20  lg:gap-5 mt-14 h-[calc(100vh-136px)] z-9">
+      <div className="flex relative lg:flex-row flex-col gap-20  lg:gap-5 mt-14 h-[calc(100vh-116px)]   lg:h-[calc(100vh-136px)] z-9">
         {/* Title, Description & Button */}
         <div className="space-y-6">
           <h1 className="font-extrabold text-shadow-md text-[55px] leading-15 lg:text-[72px] lg:leading-20 max-w-159.75">
