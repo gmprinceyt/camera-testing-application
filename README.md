@@ -189,7 +189,13 @@ pnpm run dev
 Open: `http://localhost:3000`
 
 ---
+## ⚠️ Limitations
 
+* No photo capture or recording (out of scope)
+* Camera labels depend on browser/device
+* If permission is denied, browser popup will not reappear automatically (browser security behavior)
+
+---
 ## 🏁 Summary
 
 This project demonstrates:
