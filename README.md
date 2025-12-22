@@ -31,7 +31,7 @@ No UI templates or third-party camera libraries were used.
 
 ## 🚀 Live Demo
 
-🔗 **Live URL:** `<your-deployment-link>`
+🔗 **Live URL:** https://camera-testing-application.vercel.app/
 🔗 **GitHub Repo:** `https://github.com/gmprinceyt`
 
 ---
