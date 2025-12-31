@@ -28,6 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-5359444901473555"></meta>
+        <meta name="google-site-verification" content="59FDxNt0ElxEBuMH2TgWtweYQzkBHIWE3CJf76NSbcA" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-slate-50`}
