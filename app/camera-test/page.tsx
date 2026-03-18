@@ -18,17 +18,20 @@ export default function CameraTest() {
 
   // Notifications
   useEffect(() => {
+
+    document.title = "Start Camera Test"
+    console.log("Hello First")
     if (error && error !== null) {
       toast.error(error, { style: { fontFamily: "Geist Mono" } });
     }
-  }, [error]);
-  useEffect(() => {
+
     if (status === "success") {
       toast.success("Camera is Working fine. ", {
         style: { fontFamily: "Geist Mono" },
       });
     }
-  }, [status]);
+  }, [error, status]);
+
 
   // Canditional Render For Helper Button
   const renderControls = () => {
@@ -65,7 +68,7 @@ export default function CameraTest() {
         );
       case "stopped":
         return (
-          <h2 className="text-yellow-400 font-mono text-[18px]">
+          <h2 className="text-black font-semibold  font-mono text-[18px]">
             Camera Stopped!
           </h2>
         );
@@ -85,7 +88,7 @@ export default function CameraTest() {
 
   return (
     <Layout>
-      <div className="  lg:px-16 px-4.5 h-screen bg-linear-to-b from-[#fff3c8] to-[#ffe14e] dark:from-[#312b0b] dark:to-[#000000] ">
+      <div className="  lg:px-16 px-4.5 h-screen bg-linear-to-b from-yellow-400 to-yellow-600 dark:from-[#312b0b] dark:to-[#000000] ">
         <Navbar />
 
         <div className="flex justify-center relative z-9">
@@ -140,6 +143,7 @@ export default function CameraTest() {
         src={"/Circlebg.svg"}
         height={218}
         width={218}
+        loading="eager"
       />
       <Image
         alt="Background-image"
@@ -147,6 +151,7 @@ export default function CameraTest() {
         src={"/Circlebg.svg"}
         height={218}
         width={218}
+        loading="eager"
       />
     </Layout>
   );

@@ -31,7 +31,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="59FDxNt0ElxEBuMH2TgWtweYQzkBHIWE3CJf76NSbcA" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-slate-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-slate-50 `}
       >
         <ThemeProvider
           attribute="class"
@@ -40,7 +40,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Layout>{children}</Layout>
-        </ThemeProvider>{" "}
+        </ThemeProvider>
       </body>
     </html>
   );
